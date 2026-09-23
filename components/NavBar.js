@@ -5,6 +5,7 @@ import ApplicationsMenu from "./ApplicationsMenu";
 const LINKS = [
   { href: "/", label: "Home" },
   { href: "/staff", label: "Staff" },
+  { href: "/streamers", label: "Streamers" },
   { href: "/vehicles", label: "Vehicles" },
   { href: "/property", label: "Property" },
   { href: "/peds", label: "Peds" },
