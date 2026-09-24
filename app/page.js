@@ -4,6 +4,7 @@ import { ICONS } from "@/components/icons";
 
 const SECTIONS = [
   { href: "/staff", label: "Staff", desc: "Who runs the city", icon: "staff" },
+  { href: "/streamers", label: "Streamers", desc: "Creators going live", icon: "streamers" },
   { href: "/vehicles", label: "Vehicles", desc: "Cars & motorcycles", icon: "vehicles" },
   { href: "/property", label: "Property", desc: "Businesses & houses", icon: "property" },
   { href: "/peds", label: "Peds", desc: "Male & female peds", icon: "peds" },
@@ -14,9 +15,9 @@ export default function HomePage() {
     <main className="page">
       <section className="hero-banner">
         <div className="container">
-          <div style={{ display: "flex", alignItems: "center", gap: 12, flexWrap: "wrap" }}>
-            <span className="season-badge" style={{ marginBottom: 0 }}>{SEASON_LABEL}</span>
-            <h1 style={{ fontSize: "clamp(40px,7vw,72px)", maxWidth: "16ch" }}>DELTA STORY-LINE</h1>
+          <div style={{ display: "flex", alignItems: "center", gap: 12, flexWrap: "nowrap" }}>
+            <span className="season-badge" style={{ marginBottom: 0, whiteSpace: "nowrap", flexShrink: 0 }}>{SEASON_LABEL}</span>
+            <h1 style={{ fontSize: "clamp(28px,6vw,72px)", maxWidth: "16ch" }}>DELTA STORY-LINE</h1>
           </div>
           <p className="lead" style={{ marginTop: 18, fontSize: "1.1rem", color: "#d7dbe2" }}>{TAGLINE}</p>
         </div>

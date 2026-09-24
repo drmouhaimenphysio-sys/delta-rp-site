@@ -1,3 +1,4 @@
+import { cloneElement } from "react";
 import { STAFF } from "@/lib/data";
 import { ICONS } from "@/components/icons";
 
@@ -28,9 +29,16 @@ function StaffCard({ name, role, icon, photo, big }) {
           }}
         />
       ) : (
-        ICONS[icon]
+        <div style={{ display: "flex", justifyContent: "center" }}>{ICONS[icon]}</div>
       )}
-      <div style={{ color: "var(--accent)", fontSize: "0.78rem" }}>{role}</div>
+      <div style={{ display: "flex", alignItems: "center", justifyContent: "center", gap: 6, color: "var(--accent)", fontSize: "0.78rem" }}>
+        {photo && (
+          <span style={{ width: 16, height: 16, display: "inline-flex" }}>
+            {cloneElement(ICONS[icon], { style: { width: 16, height: 16, stroke: "var(--accent)" } })}
+          </span>
+        )}
+        {role}
+      </div>
       <div style={{ fontWeight: 700, fontSize: big ? "1.4rem" : "1.05rem", marginTop: 2 }}>{name}</div>
     </div>
   );

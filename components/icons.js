@@ -98,4 +98,11 @@ export const ICONS = {
       <path d="M20 19v1a3 3 0 0 1-3 3h-3" />
     </svg>
   ),
+  streamers: (
+    <svg viewBox="0 0 24 24" className="item-icon">
+      <rect x="2.5" y="5" width="14" height="11" rx="1.5" />
+      <path d="M16.5 9.2l5-2.7v9l-5-2.7" />
+      <circle cx="9.5" cy="10.5" r="2.4" />
+    </svg>
+  ),
 };
