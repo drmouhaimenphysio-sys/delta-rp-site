@@ -12,7 +12,7 @@ export default function PropertyPage() {
         <div className="eyebrow">Add-ons</div>
         <h1 style={{ fontSize: "clamp(32px,5vw,52px)" }}>Property</h1>
         <p className="lead" style={{ marginTop: 12 }}>Businesses to run and houses to live in.</p>
-        <ToggleGrid data={PROPERTY} iconFor={ICON_FOR} defaultOption="business" />
+        <ToggleGrid data={PROPERTY} iconFor={ICON_FOR} defaultOption="business" buyOptions={["business"]} />
       </div>
     </main>
   );
